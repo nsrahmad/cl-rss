@@ -1,3 +1,9 @@
+cl-rss (0.1.1-1) unstable; urgency=low
+
+  * Apply patch from Chris Baker (closes:218287)
+
+ -- Kevin M. Rosenberg <kmr@debian.org>  Thu, 30 Oct 2003 15:23:51 -0700
+
 cl-rss (0.1-1) unstable; urgency=low
 
   * Initial upload

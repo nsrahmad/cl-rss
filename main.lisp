@@ -87,7 +87,7 @@
 	      (cond
 	       ((string= "title" (car pair))
 		(setf (title item) (second pair)))
-	       ((string= "links" (car pair))
+	       ((string= "link" (car pair))
 		(setf (link item) (second pair)))))
 	    (push item (items rss))))
 	(incf pos))
