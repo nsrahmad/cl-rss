@@ -7,7 +7,7 @@
 ;;;; Programmer:    Kevin M. Rosenberg
 ;;;; Date Started:  Aug 2003
 ;;;;
-;;;; $Id: rss.asd 7061 2003-09-07 06:34:45Z kevin $
+;;;; $Id$
 ;;;; *************************************************************************
 
 (defpackage #:rss-system (:use #:asdf #:cl))
