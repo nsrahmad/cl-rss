@@ -26,7 +26,7 @@
     '("http://www.cliki.net/recent-changes.rdf"))
 
 (defun show-sites (&optional (sites *sites*))
-  (dolist (site sites)
+  (dolist (site (mklist sites))
     (awhen (rss-site site)
 	   (display-site it))))
 
