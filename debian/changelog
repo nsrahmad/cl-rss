@@ -1,3 +1,17 @@
+cl-rss (0.1.1-3) unstable; urgency=low
+
+  * New maintainer. Revert mistaken orphaning.
+
+ -- Kevin M. Rosenberg <kmr@debian.org>  Wed,  2 Mar 2005 23:30:40 -0700
+
+cl-rss (0.1.1-2) unstable; urgency=low
+
+  * New maintainer. (Closes: #297405: O: cl-rss -- Common Lisp RSS
+    processor)
+  * Adopted by Peter Van Eynde
+
+ -- Peter Van Eynde <pvaneynd@debian.org>  Tue,  1 Mar 2005 10:19:21 +0100
+
 cl-rss (0.1.1-1) unstable; urgency=low
 
   * Apply patch from Chris Baker (closes:218287)
