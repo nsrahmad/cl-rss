@@ -3,7 +3,6 @@
 pkg	:= rss
 debpkg  := cl-rss
 
-
 clc-source	:= usr/share/common-lisp/source
 clc-systems	:= usr/share/common-lisp/systems
 clc-rss	:= $(clc-source)/$(pkg)
