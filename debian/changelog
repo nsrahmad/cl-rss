@@ -1,6 +1,5 @@
 cl-rss (0.1.1-5) unstable; urgency=low
 
-  * New upstream
   * debian/watch: New file
   * debian/control: Require debhelper 7. Change to new lisp section.
   Add Vcs-Git and Homepage fields.
