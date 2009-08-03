@@ -2,14 +2,16 @@ Source: cl-rss
 Section: lisp
 Priority: optional
 Maintainer: Kevin M. Rosenberg <kmr@debian.org>
+Build-Depends-Indep: dh-lisp
 Build-Depends: debhelper (>> 7.0.0)
 Standards-Version: 3.8.2.0
 Homepage: http://files.b9.com/cl-rss/
 Vcs-Git: git://git.b9.com/cl-rss.git
+Vcs-Browser: http://git.b9.com/?p=cl-rss.git
 
 Package: cl-rss
 Architecture: all
-Depends: common-lisp-controller (>= 3.37), cl-kmrcl, cl-xmls, cl-aserve, cl-ptester
+Depends: ${misc:Depends}, cl-kmrcl, cl-xmls, cl-aserve, cl-ptester
 Description: Common Lisp RSS processor
  This package provides a Common Lisp library for fetching and parsing
  Remote Site Summary data via HTTP. Currently, it supports RSS versions

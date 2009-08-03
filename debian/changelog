@@ -1,3 +1,10 @@
+cl-rss (0.1.1-6) unstable; urgency=low
+
+  * Convert to dh_lisp
+  * control: Add Vcs-Browser field
+
+ -- Kevin M. Rosenberg <kmr@debian.org>  Mon, 03 Aug 2009 12:27:08 -0600
+
 cl-rss (0.1.1-5) unstable; urgency=low
 
   * debian/watch: New file
