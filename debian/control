@@ -15,4 +15,4 @@ Depends: ${misc:Depends}, cl-kmrcl, cl-xmls, cl-aserve, cl-ptester
 Description: Common Lisp RSS processor
  This package provides a Common Lisp library for fetching and parsing
  Remote Site Summary data via HTTP. Currently, it supports RSS versions
- 0.90, 0.91, and 0.92.
+ 0.90, 0.91, and 0.92 as well as RSS version 2.
