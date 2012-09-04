@@ -1,3 +1,9 @@
+cl-rss (0.9.0-2) UNRELEASED; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Kevin M. Rosenberg <kmr@debian.org>  Tue, 04 Sep 2012 17:12:37 -0600
+
 cl-rss (0.9.0-1) unstable; urgency=low
 
   * New upstream: supports RSS 2
