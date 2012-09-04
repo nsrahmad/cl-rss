@@ -1,0 +1,8 @@
+2012-09-04 Kevin Rosenberg <kevin@rosenberg.net>
+	* Version 0.9.0
+	* Commit patch from Rupert Swarbrick: Parse RSS version 2 and
+	export slot readers.  This change allows CL-RSS to parse RSS
+	version 2 feeds as well as 0.9x feeds. Channels gain four slots:
+	language, image, pub-date and last-build-date. Items gain a
+	description and pub-date.  The readers for these slot values are
+	now exported from the package.

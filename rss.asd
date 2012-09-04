@@ -7,7 +7,6 @@
 ;;;; Programmer:    Kevin M. Rosenberg
 ;;;; Date Started:  Aug 2003
 ;;;;
-;;;; $Id$
 ;;;; *************************************************************************
 
 (defpackage #:rss-system (:use #:asdf #:cl))
@@ -21,6 +20,7 @@
   :maintainer "Kevin M. Rosenberg <kmr@debian.org>"
   :licence "BSD"
   :description "Remote Site Summary"
+  :version "0.9.0"
 
   :properties ((#:author-email . "kevin@rosenberg.net")
 	       ((#:albert #:output-dir) . "albert-docs/")
@@ -28,7 +28,7 @@
 	       ((#:albert #:docbook #:template) . "book")
 	       ((#:albert #:docbook #:bgcolor) . "white")
 	       ((#:albert #:docbook #:textcolor) . "black"))
-  
+
   :serial t
   :depends-on (kmrcl xmls #-allegro aserve)
   :components

@@ -14,6 +14,12 @@
 (defpackage rss
   (:use #:cl #:kmrcl)
   (:export
-   #:show-sites
-   ))
+   #:rss-channel #:rss-item #:rss-image
+   #:show-sites #:rss-site
+   #:parse-rss-file #:parse-rss-stream
+
+   ;; Accessors to class slots
+   #:title #:link #:description #:language #:pub-date #:image #:items
+   #:url #:width #:height #:last-build-date))
+
 
