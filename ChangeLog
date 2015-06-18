@@ -1,4 +1,9 @@
 2012-09-04 Kevin Rosenberg <kevin@rosenberg.net>
+	* Version 0.9.1
+	* main.lisp: Patch from Maxim Velesyik fixing errors parsing CNN
+	feed.
+
+2012-09-04 Kevin Rosenberg <kevin@rosenberg.net>
 	* Version 0.9.0
 	* Commit patch from Rupert Swarbrick: Parse RSS version 2 and
 	export slot readers.  This change allows CL-RSS to parse RSS

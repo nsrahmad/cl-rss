@@ -111,11 +111,14 @@ was already set."
 throwing an error if it was already set, or if they aren't a string. Used for
 elements like <title> and <link>, which shouldn't crop up twice."
   (let ((string (car (xmls:xmlrep-children node))))
-    (unless (stringp string)
-      (error 'rss-parse-error
-             :msg (format nil "Got ~A when expecting string for contents of <~A>"
-                          string name)))
-    (setf-unique-slot object name string)))
+    ;; skip empty nodes
+    (when string
+        (progn
+          (unless (stringp string)
+            (error 'rss-parse-error
+                   :msg (format nil "Got ~A when expecting string for contents of <~A>"
+                                string name)))
+          (setf-unique-slot object name string)))))
 
 (defun ensure-string-slots-filled (object required-slots strict?)
   "For each slot in REQUIRED-SLOTS, if it is unbound in OBJECT, set it to the
@@ -157,6 +160,9 @@ and BODY is performed with ITEM set to the item we're modifying and NODE set to
 the XML node we just got."
   `(defun ,name (node object strict?)
      (declare (ignorable strict?))
+     ;; skip atom-related tags
+     (when (equalp "http://www.w3.org/2005/Atom" (xmls:node-ns node))
+       (return-from ,name nil))
      (string=-case (xmls:xmlrep-tag node)
          (,@(mapcar
              (lambda (sym) `(,(symbol-to-name sym)
