@@ -1,7 +1,7 @@
 cl-rss (0.9.1.1-1) unstable; urgency=low
 
-	* Remove non-functional test-op from upstream
-	* (require 'rss) tested and working (closes: 916549)
+  * Remove non-functional test-op from upstream
+  * (require 'rss) tested and working (closes: 916549)
 
  -- Kevin M. Rosenberg <kmr@debian.org>  Tue, 29 Sep 2020 08:39:24 -0600
 

@@ -3,8 +3,8 @@ Section: lisp
 Priority: optional
 Maintainer: Kevin M. Rosenberg <kmr@debian.org>
 Build-Depends-Indep: dh-lisp
-Build-Depends: debhelper (>> 7.0.0)
-Standards-Version: 3.9.5.0
+Build-Depends: debhelper (>> 11.0.0)
+Standards-Version: 4.5.0.3
 Homepage: http://files.kpe.io/cl-rss/
 Vcs-Git: git://git.kpe.io/cl-rss.git
 Vcs-Browser: http://git.kpe.io/?p=cl-rss.git
