@@ -7,9 +7,8 @@ clc-source	:= usr/share/common-lisp/source
 clc-systems	:= usr/share/common-lisp/systems
 clc-files	:= $(clc-source)/$(pkg)
 
-
+build: build-indep build-arch
 build-indep:
-
 build-arch:
 
 clean:

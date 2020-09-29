@@ -20,7 +20,7 @@
   :maintainer "Kevin M. Rosenberg <kmr@debian.org>"
   :licence "BSD"
   :description "Remote Site Summary"
-  :version "0.9.0"
+  :version "0.9.1.1"
 
   :properties ((#:author-email . "kevin@rosenberg.net")
 	       ((#:albert #:output-dir) . "albert-docs/")
@@ -33,20 +33,4 @@
   :depends-on (kmrcl xmls #-allegro aserve)
   :components
   ((:file "package")
-   (:file "main")
-   ))
-
-(defmethod perform ((o test-op) (c (eql (find-system 'rss))))
-  (operate 'load-op 'rss-tests)
-  (operate 'test-op 'rss-tests :force t))
-
-(defsystem rss-tests
-    :depends-on (rss ptester)
-    :components ((:file "tests")))
-
-(defmethod perform ((o test-op) (c (eql (find-system 'rss-tests))))
-  (operate 'load-op 'rss-tests)
-  (or (funcall (intern (symbol-name '#:do-tests)
-		       (find-package '#:rss-tests)))
-      (error "test-op failed")))
-
+   (:file "main")))
